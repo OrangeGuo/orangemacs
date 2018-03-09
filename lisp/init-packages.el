@@ -14,6 +14,7 @@
 		;; --- Auto-completion ---
 		company
 		;; --- Better Editor ---
+		use-package
 		evil-leader
 		evil
 		helm-ag
@@ -26,7 +27,8 @@
 		which-key
 		ivy
 		window-numbering 
-	        
+		rainbow-delimiters        
+		ibuffer-projectile
 		;; --- Major Mode ---
 
 		;; --- Minor Mode ---

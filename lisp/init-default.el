@@ -5,13 +5,18 @@
 (require 'popwin)
 (popwin-mode 1)
 (ivy-mode 1)
-
+(rainbow-delimiters-mode)
 (set-language-environment "UTF-8")
 (window-numbering-mode 1)
 (recentf-mode 1)
 (smartparens-global-mode 1)
 (setq recentf-max-menu-item 100)
 (fset 'yes-or-no-p 'y-or-n-p)
+(add-hook 'ibuffer-hook
+    (lambda ()
+      (ibuffer-projectile-set-filter-groups)
+      (unless (eq ibuffer-sorting-mode 'alphabetic)
+        (ibuffer-do-sort-by-alphabetic))))
 (require 'dired-x)
 (put 'dired-find-alternate-file 'disabled nil)
 
@@ -42,6 +47,8 @@
   "fr" 'counsel-recentf
   "gs" 'magit-status
   "gi" 'magit-init
-
+  "bi" 'ibuffer
+  "<SPC>" 'counsel-M-x
+  "qq" 'save-buffers-kill-emacs
   )
 (provide 'init-default)
