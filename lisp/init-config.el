@@ -4,14 +4,14 @@
 (setq org-octopress-directory-org-top   "~/blog/source")
 (setq org-octopress-directory-org-posts "~/blog/source/blog")
 (setq org-octopress-setup-file          "~/blog/setupfile.org")
-
 (require 'popwin)
 (popwin-mode 1)
 (ivy-mode 1)
 (window-numbering-mode 1)
 (recentf-mode 1)
 (smartparens-global-mode 1)
-
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
 (setq recentf-max-menu-item 100)
 (global-evil-leader-mode)
 (evil-mode 1)
@@ -47,6 +47,15 @@
 (setq default-input-method "pyim")
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 (setq pyim-page-tooltip 'popup)
+(add-hook 'ibuffer-hook
+    (lambda ()
+      (ibuffer-projectile-set-filter-groups)
+      (unless (eq ibuffer-sorting-mode 'alphabetic)
+        (ibuffer-do-sort-by-alphabetic))))
 
+(require 'diminish)
+(diminish 'company-mode "C")
+(diminish 'ivy-mode "I")
+(diminish 'undo-tree-mode "U")
 
 (provide 'init-config)

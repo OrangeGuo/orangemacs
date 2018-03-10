@@ -30,6 +30,8 @@
 		which-key
 		ivy
 		pyim
+		diminish
+		spaceline
 		org-octopress
 		window-numbering 
 		ibuffer-projectile
