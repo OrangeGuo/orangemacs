@@ -30,6 +30,7 @@
 		which-key
 		ivy
 		pyim
+		ace-window
 		diminish
 		spaceline
 		org-octopress
