@@ -92,6 +92,9 @@
   "oa" 'org-agenda
   "oc" 'org-capture
   "ob" 'org-octopress
+  "oe" 'org-export-dispatch
+  "ol" 'org-store-link
+  "oi" 'org-insert-link
   "ps" 'helm-do-ag-project-root
   "pf" 'counsel-projectile-find-file
   "pp" 'counsel-projectile-switch-project
@@ -112,8 +115,10 @@
         (ibuffer-do-sort-by-alphabetic))))
 
 (require 'diminish)
-(diminish 'company-mode "C")
-(diminish 'ivy-mode "I")
-(diminish 'undo-tree-mode "U")
-
+(diminish 'company-mode )
+(diminish 'ivy-mode )
+(diminish 'undo-tree-mode )
+(diminish 'smartparens-mode )
+(diminish 'eldoc-mode )
+(diminish 'which-key-mode )
 (provide 'init-config)
