@@ -34,6 +34,7 @@
 		diminish
 		spaceline
 		org-octopress
+		org-bullets
 		window-numbering 
 		ibuffer-projectile
 		;; --- Major Mode ---

@@ -4,15 +4,7 @@
 (delete-selection-mode 1)
     ;; Org Headline Bullet Style (From Level 0 to Level 20)
 (setq org-bullets-bullet-list
-      '(
-        "⓪" "①" "②"
-        "③" "④" "⑤"
-        "⑥" "⑦" "⑧"
-        "⑨" "⑩" "⑪"
-        "⑫" "⑬" "⑭"
-        "⑮" "⑯" "⑰"
-        "⑱" "⑲" "⑳"
-        ))
+    '("①" "②" "③" "④" "⑤" "⑥" "⑦" "⑧" "⑨" "⑩"  ))
 (set-language-environment "UTF-8")
 (fset 'yes-or-no-p 'y-or-n-p)
 (require 'dired-x)

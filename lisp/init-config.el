@@ -89,6 +89,9 @@
   "gi" 'magit-init
   "bi" 'ibuffer
   "bb" 'switch-to-prev-buffer
+  "ms" 'kmacro-start-macro
+  "me" 'kmacro-end-call-mouse
+  "mc" 'kmacro-call-macro
   "oa" 'org-agenda
   "oc" 'org-capture
   "ob" 'org-octopress
