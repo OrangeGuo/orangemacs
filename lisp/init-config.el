@@ -103,6 +103,11 @@
   "pp" 'counsel-projectile-switch-project
   "ss" 'swiper
   "<SPC>" 'counsel-M-x
+  "wr" 'split-window-right
+  "wb" 'split-window-below
+  "wc" 'delete-other-windows
+  "wd" 'delete-window
+  "a"  'ace-window
   "qq" 'save-buffers-kill-emacs
   )
 (require 'pyim)

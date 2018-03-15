@@ -3,4 +3,5 @@
 (global-set-key (kbd "C-c C-r") 'counsel-recentf)
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "M-o") 'ace-window)
 (provide 'init-keybindings)
