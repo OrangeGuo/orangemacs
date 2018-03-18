@@ -14,7 +14,7 @@
 (smartparens-global-mode 1)
 (require 'spaceline-config)
 (spaceline-spacemacs-theme)
-(setq recentf-max-menu-item 200)
+(setq recentf-max-saved-items 100)
 (global-evil-leader-mode)
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)

@@ -32,5 +32,5 @@
               :size 16.5)))
 (require 'org-bullets)
 (add-hook 'org-mode-hook 'org-bullets-mode)
-
+(add-hook 'org-mode-hook 'auto-fill-mode)
 (provide 'init-ui)
