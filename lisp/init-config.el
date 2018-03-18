@@ -1,9 +1,10 @@
 (require 'org-octopress)
-(setq org-octopress-directory-top       "~/blog/source")
-(setq org-octopress-directory-posts     "~/blog/source/_posts")
-(setq org-octopress-directory-org-top   "~/blog/source")
-(setq org-octopress-directory-org-posts "~/blog/source/blog")
-(setq org-octopress-setup-file          "~/blog/setupfile.org")
+(setq org-octopress-directory-top       "~/blog/source"
+        org-octopress-directory-posts     "~/blog/source/_posts"
+	org-octopress-directory-org-top   "~/blog/source"
+	org-octopress-directory-org-posts "~/blog/source/blog"
+	org-octopress-setup-file          "~/blog/setupfile.org")
+
 (require 'popwin)
 
 (popwin-mode)
@@ -21,15 +22,6 @@
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 (evil-leader/set-leader "<SPC>")
 
-(setq company-minimum-prefix-length 1)
-(global-company-mode 1)
-(setq company-show-numbers 1)
-
-(with-eval-after-load 'company
-  (define-key company-active-map (kbd "M-n") nil)
-  (define-key company-active-map (kbd "M-p") nil)
-  (define-key company-active-map (kbd "C-n") #'company-select-next)
-  (define-key company-active-map (kbd "C-p") #'company-select-previous))
 
 ;;(setq org-agenda-files '("~/org-notes"))
 (defvar org-agenda-dir "" "gtd org files location")
@@ -123,7 +115,6 @@
         (ibuffer-do-sort-by-alphabetic))))
 
 (require 'diminish)
-(diminish 'company-mode )
 (diminish 'ivy-mode )
 (diminish 'undo-tree-mode )
 (diminish 'smartparens-mode )

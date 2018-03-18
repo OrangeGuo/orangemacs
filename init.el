@@ -8,6 +8,7 @@
 (require 'init-ui)
 (require 'init-default)
 (require 'init-config)
+(require 'init-company)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
