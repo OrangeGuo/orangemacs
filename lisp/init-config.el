@@ -8,14 +8,11 @@
 (require 'popwin)
 
 (popwin-mode)
-(ivy-mode 1)
 
 (window-numbering-mode 1)
-(recentf-mode 1)
 (smartparens-global-mode 1)
 (require 'spaceline-config)
 (spaceline-spacemacs-theme)
-(setq recentf-max-saved-items 100)
 (global-evil-leader-mode)
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)
@@ -115,7 +112,6 @@
         (ibuffer-do-sort-by-alphabetic))))
 
 (require 'diminish)
-(diminish 'ivy-mode )
 (diminish 'undo-tree-mode )
 (diminish 'smartparens-mode )
 (diminish 'eldoc-mode )
