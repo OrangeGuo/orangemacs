@@ -20,7 +20,6 @@
 (evil-leader/set-leader "<SPC>")
 
 
-(setq org-agenda-files '("~/org"))
 ;;(setq org-agenda-files '("~/org-notes"))
 (defvar org-agenda-dir "" "gtd org files location")
 (setq org-agenda-dir "~/org")
