@@ -4,10 +4,10 @@
 ;; Package Management
 ;; -----------------------------------------------------------------
 (require 'init-packages)
-(require 'init-keybindings)
 (require 'init-ui)
 (require 'init-default)
 (require 'init-config)
+(require 'init-keybindings)
 (require 'init-company)
 (require 'init-ivy)
 (message (emacs-init-time))
