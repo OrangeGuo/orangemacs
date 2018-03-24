@@ -20,9 +20,10 @@
 (evil-leader/set-leader "<SPC>")
 
 
+(setq org-agenda-files '("~/org"))
 ;;(setq org-agenda-files '("~/org-notes"))
 (defvar org-agenda-dir "" "gtd org files location")
-(setq-default org-agenda-dir "~/org")
+(setq org-agenda-dir "~/org")
   (setq org-agenda-file-note (expand-file-name "notes.org" org-agenda-dir))
   (setq org-agenda-file-gtd (expand-file-name "gtd.org" org-agenda-dir))
   (setq org-agenda-file-journal (expand-file-name "journal.org" org-agenda-dir))
