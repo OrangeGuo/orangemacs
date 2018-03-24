@@ -4,5 +4,6 @@
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "M-o") 'ace-window)
+(global-set-key (kbd "C-s") 'swiper)
 (define-key evil-normal-state-map (kbd "<RET>") 'org-open-at-point)
 (provide 'init-keybindings)
