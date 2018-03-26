@@ -11,12 +11,14 @@
 (ace-link-setup-default)
 (window-numbering-mode 1)
 (smartparens-global-mode 1)
+(show-paren-mode 1)
 (global-evil-leader-mode)
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 (evil-leader/set-leader "<SPC>")
-
+(require 'highlight-parentheses)
+(global-highlight-parentheses-mode 1)
 
 ;;(setq org-agenda-files '("~/org-notes"))
 (defvar org-agenda-dir "" "gtd org files location")
@@ -114,4 +116,5 @@
 (diminish 'smartparens-mode )
 (diminish 'eldoc-mode )
 (diminish 'which-key-mode )
+(diminish 'highlight-parentheses-mode)
 (provide 'init-config)

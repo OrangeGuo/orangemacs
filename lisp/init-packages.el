@@ -15,6 +15,7 @@
 		company
 		;; --- Better Editor ---
 		projectile
+		highlight-parentheses
 		counsel-projectile
 		org-projectile
 		use-package
