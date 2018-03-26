@@ -22,52 +22,6 @@
 (global-highlight-parentheses-mode 1)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 ;;(setq org-agenda-files '("~/org-notes"))
-(defvar org-agenda-dir "" "gtd org files location")
-(setq org-agenda-dir "~/org")
-  (setq org-agenda-file-note (expand-file-name "notes.org" org-agenda-dir))
-  (setq org-agenda-file-gtd (expand-file-name "gtd.org" org-agenda-dir))
-  (setq org-agenda-file-journal (expand-file-name "journal.org" org-agenda-dir))
-  (setq org-agenda-file-code-snippet (expand-file-name "snippet.org" org-agenda-dir))
-  (setq org-default-notes-file (expand-file-name "gtd.org" org-agenda-dir))
-  (setq org-agenda-files (list org-agenda-dir))
-
-
-  (setq org-capture-templates
-        '(("t" "Todo" entry (file+headline org-agenda-file-gtd "study")
-           "* TODO [#B] %?\n  %i\n"
-           :empty-lines 1)
-          ("l" "Todo" entry (file+headline org-agenda-file-gtd "life")
-           "* TODO [#B] %?\n  %i\n"
-           :empty-lines 1)
-          ("n" "notes" entry (file+headline org-agenda-file-note "Quick notes")
-           "* %?\n  %i\n %U"
-           :empty-lines 1)
-          ("b" "Blog Ideas" entry (file+headline org-agenda-file-note "Blog Ideas")
-           "* TODO [#B] %?\n  %i\n %U"
-           :empty-lines 1)
-          ("s" "Code Snippet" entry
-           (file org-agenda-file-code-snippet)
-           "* %?\t%^g\n#+BEGIN_SRC %^{language}\n\n#+END_SRC")
-          ("l" "links" entry (file+headline org-agenda-file-note "Quick notes")
-           "* TODO [#C] %?\n  %i\n %a \n %U"
-           :empty-lines 1)
-          ("j" "Journal Entry"
-           entry (file+datetree org-agenda-file-journal)
-           "* %?"
-           :empty-lines 1)))
-
-
-  (setq org-agenda-custom-commands
-        '(
-          ("w" . "task view")
-          ("wa" "重要且紧急的任务" tags-todo "+PRIORITY=\"A\"")
-          ("wb" "重要且不紧急的任务" tags-todo "-Weekly-Monthly-Daily+PRIORITY=\"B\"")
-          ("wc" "不重要且紧急的任务" tags-todo "+PRIORITY=\"C\"")
-          ("r" "Weekly Review"
-           ((stuck "") ;; review stuck projects as designated by org-stuck-projects
-            (tags-todo "life") ;; review all projects (assuming you use todo keywords to designate projects)
-            ))))
-
 
 (evil-leader/set-key
   "fs" 'save-buffer

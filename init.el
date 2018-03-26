@@ -10,6 +10,7 @@
 (require 'init-keybindings)
 (require 'init-company)
 (require 'init-ivy)
+(require 'init-org)
 (message (emacs-init-time))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -17,7 +18,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/org"))
- '(org-default-notes-file "/home/orange/org-notes/notes.org")
  '(org-export-headline-levels 4)
  '(package-selected-packages
    '(company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete swiper counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme)))
