@@ -31,8 +31,9 @@
 		ivy
 		pyim
 		ace-window
+		ace-link
+		nyan-mode
 		diminish
-		spaceline
 		org-octopress
 		org-bullets
 		window-numbering 
@@ -95,8 +96,8 @@
   (setq pyim-page-length 9)
 
   ;; 让 Emacs 启动时自动加载 pyim 词库
-  (add-hook 'emacs-startup-hook
-           #'(lambda () (pyim-restart-1 t)))
+  ;;(add-hook 'emacs-startup-hook
+    ;;       #'(lambda () (pyim-restart-1 t)))
   :bind
   (("M-j" . pyim-convert-code-at-point) ;与 pyim-probe-dynamic-english 配合
    ("C-;" . pyim-delete-word-from-personal-buffer)))

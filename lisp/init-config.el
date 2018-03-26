@@ -8,11 +8,9 @@
 (require 'popwin)
 
 (popwin-mode)
-
+(ace-link-setup-default)
 (window-numbering-mode 1)
 (smartparens-global-mode 1)
-(require 'spaceline-config)
-(spaceline-spacemacs-theme)
 (global-evil-leader-mode)
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)

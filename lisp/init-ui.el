@@ -33,4 +33,5 @@
 (require 'org-bullets)
 (add-hook 'org-mode-hook 'org-bullets-mode)
 (add-hook 'org-mode-hook 'auto-fill-mode)
+(add-hook 'after-init-hook 'nyan-mode)
 (provide 'init-ui)

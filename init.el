@@ -18,7 +18,9 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files '("~/org"))
  '(org-default-notes-file "/home/orange/org-notes/notes.org")
- '(org-export-headline-levels 4))
+ '(org-export-headline-levels 4)
+ '(package-selected-packages
+   '(company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete swiper counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
