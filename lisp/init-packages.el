@@ -11,41 +11,36 @@
 
  ;; Add Packages
  (defvar my/packages '(
-		;; --- Auto-completion ---
-		company
-		;; --- Better Editor ---
-		projectile
-		highlight-parentheses
-		counsel-projectile
-		org-projectile
-		use-package
-		evil-leader
-		evil
-		helm-ag
-		magit
-		hungry-delete
-		swiper
-		counsel
-		smartparens
-		popwin
-		which-key
-		ivy
-		pyim
-		ace-window
 		ace-link
-		nyan-mode
+		ace-window
+		avy
+		company
+		counsel
+		counsel-projectile
 		diminish
-		org-octopress
-		org-bullets
-		window-numbering 
+		evil
+		evil-leader
+		helm-ag
+		highlight-parentheses
+		hungry-delete
 		ibuffer-projectile
-		;; --- Major Mode ---
-
-		;; --- Minor Mode ---
-
-		;; --- Themes ---
+		ivy
+		magit
 		monokai-theme
-		;; solarized-theme
+		nyan-mode
+		org-bullets
+		org-octopress
+		org-projectile
+		popwin
+		powerline
+		projectile
+		pyim
+		rainbow-delimiters
+		swiper
+		smartparens
+		use-package
+		which-key
+		window-numbering 
 		) "Default packages")
 
  (setq package-selected-packages my/packages)

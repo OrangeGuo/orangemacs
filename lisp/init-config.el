@@ -4,7 +4,8 @@
 	org-octopress-directory-org-top   "~/blog/source"
 	org-octopress-directory-org-posts "~/blog/source/blog"
 	org-octopress-setup-file          "~/blog/setupfile.org")
-
+(require 'powerline)
+(powerline-default-theme)
 (require 'popwin)
 
 (popwin-mode)
@@ -19,7 +20,7 @@
 (evil-leader/set-leader "<SPC>")
 (require 'highlight-parentheses)
 (global-highlight-parentheses-mode 1)
-
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 ;;(setq org-agenda-files '("~/org-notes"))
 (defvar org-agenda-dir "" "gtd org files location")
 (setq org-agenda-dir "~/org")
