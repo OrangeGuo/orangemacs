@@ -10,5 +10,5 @@
                (file+headline "~/org/gtd.org" "study" )
                "* TODO [#B] %^{标题} %^G\n%T\n %a   %?\n" )
 	     )
-
+(add-hook 'org-mode-hook 'org-toggle-inline-images)
 (provide 'init-org)

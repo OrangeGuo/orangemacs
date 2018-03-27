@@ -4,8 +4,8 @@
 	org-octopress-directory-org-top   "~/blog/source"
 	org-octopress-directory-org-posts "~/blog/source/blog"
 	org-octopress-setup-file          "~/blog/setupfile.org")
-(require 'powerline)
-(powerline-default-theme)
+;;(require 'powerline)
+;;(powerline-default-theme)
 (require 'popwin)
 
 (popwin-mode)
