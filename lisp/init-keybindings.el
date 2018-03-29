@@ -6,5 +6,4 @@
 (global-set-key (kbd "M-o") 'ace-window)
 (global-set-key (kbd "C-s") 'swiper)
 (define-key evil-normal-state-map (kbd "<RET>") 'org-open-at-point)
-(define-key evil-normal-state-map (kbd "TAB") 'switch-to-buffer)
 (provide 'init-keybindings)

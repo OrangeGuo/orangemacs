@@ -4,8 +4,6 @@
 	org-octopress-directory-org-top   "~/blog/source"
 	org-octopress-directory-org-posts "~/blog/source/blog"
 	org-octopress-setup-file          "~/blog/setupfile.org")
-;;(require 'powerline)
-;;(powerline-default-theme)
 (require 'popwin)
 
 (popwin-mode)
@@ -16,12 +14,14 @@
 (global-evil-leader-mode)
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 (evil-leader/set-leader "<SPC>")
 (require 'highlight-parentheses)
 (global-highlight-parentheses-mode 1)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-;;(setq org-agenda-files '("~/org-notes"))
+(add-hook 'prog-mode-hook #'global-flycheck-mode)
 
 (evil-leader/set-key
   "fs" 'save-buffer

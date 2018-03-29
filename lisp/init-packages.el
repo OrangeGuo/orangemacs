@@ -15,8 +15,11 @@
 		ace-window
 		avy
 		anaconda-mode
+		all-the-icons
+		all-the-icons-dired
 		company
 		py-autopep8
+		flycheck
 		company-anaconda
 		counsel
 		counsel-projectile
