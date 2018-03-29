@@ -11,6 +11,7 @@
 (require 'init-company)
 (require 'init-ivy)
 (require 'init-org)
+(require 'init-python)
 (message (emacs-init-time))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -21,7 +22,7 @@
  '(org-agenda-files '("~/org"))
  '(org-export-headline-levels 4)
  '(package-selected-packages
-   '(company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete swiper counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme)))
+   '(smart-yank anaconda-mode company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete swiper counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

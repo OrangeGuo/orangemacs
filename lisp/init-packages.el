@@ -14,7 +14,10 @@
 		ace-link
 		ace-window
 		avy
+		anaconda-mode
 		company
+		py-autopep8
+		company-anaconda
 		counsel
 		counsel-projectile
 		diminish
@@ -35,6 +38,7 @@
 		powerline
 		projectile
 		pyim
+		quickrun
 		rainbow-delimiters
 		swiper
 		smartparens
