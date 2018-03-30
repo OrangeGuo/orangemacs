@@ -15,13 +15,13 @@
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
-
+(load-theme 'dracula t)
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 (evil-leader/set-leader "<SPC>")
 (require 'highlight-parentheses)
 (global-highlight-parentheses-mode 1)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(add-hook 'prog-mode-hook #'global-flycheck-mode)
+(add-hook 'python-mode-hook #'global-flycheck-mode)
 
 (evil-leader/set-key
   "fs" 'save-buffer

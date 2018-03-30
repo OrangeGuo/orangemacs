@@ -18,7 +18,7 @@
 (with-eval-after-load 'dired
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 ;; 设置org导出不带toc和行号
-;;(setq org-export-with-toc nil)
+(setq org-export-with-toc nil)
 ;;(setq org-export-with-section-numbers nil)
 (setq auto-save-default nil)
 (provide 'init-default)

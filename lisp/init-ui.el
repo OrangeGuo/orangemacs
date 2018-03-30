@@ -14,7 +14,6 @@
 (setq inhibit-splash-screen 1)
 (global-hl-line-mode 1)
 (which-key-mode 1)
-(load-theme 'monokai 1)
 ;; adjust my English and Chinese font for table align
 (set-face-attribute
  'default nil
