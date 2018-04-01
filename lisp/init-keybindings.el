@@ -6,4 +6,5 @@
 (global-set-key (kbd "M-o") 'ace-window)
 (global-set-key (kbd "C-s") 'swiper)
 (define-key evil-normal-state-map (kbd "<RET>") 'org-open-at-point)
+(define-key emmet-mode-keymap (kbd "TAB") 'emmet-expand-line)
 (provide 'init-keybindings)

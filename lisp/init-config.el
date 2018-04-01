@@ -4,9 +4,18 @@
 	org-octopress-directory-org-top   "~/blog/source"
 	org-octopress-directory-org-posts "~/blog/source/blog"
 	org-octopress-setup-file          "~/blog/setupfile.org")
+(setq auto-mode-alist
+      (append
+       '(("\\.js\\'" . js2-mode))
+       '(("\\.html\\'" . web-mode))
+       auto-mode-alist))
+
+
 (require 'popwin)
 
 (popwin-mode)
+(require 'emmet-mode)
+(add-hook 'web-mode-hook 'emmet-mode)
 (ace-link-setup-default)
 (window-numbering-mode 1)
 (smartparens-global-mode 1)
@@ -18,6 +27,7 @@
 (require 'all-the-icons)
 ;; or
 (use-package all-the-icons)
+(sp-local-pair '(emacs-lisp-mode lisp-interaction-mode) "'" nil :actions nil)
 (setq inhibit-compacting-font-caches t)
 (ranger-override-dired-mode t)
 (setq ranger-cleanup-eagerly t)

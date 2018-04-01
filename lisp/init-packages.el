@@ -14,40 +14,62 @@
 		ace-link
 		ace-window
 		avy
-		anaconda-mode
+		;; dired 
 		all-the-icons
 		all-the-icons-dired
 		ranger
+		
 		company
+		;; python 
+		anaconda-mode
 		py-autopep8
-		flycheck
 		company-anaconda
-		counsel
-		counsel-projectile
-		diminish
+		
+		;; web
+		web-mode
+		js2-mode
+		web-beautify
+		js2-refactor
+		emmet-mode
+
+		;; key 
 		evil
 		evil-leader
+		which-key
+
+		;; program
+		flycheck
+		quickrun
+		yasnippet
+		yasnippet-snippets
+
+		counsel
+		counsel-projectile
 		helm-ag
-		highlight-parentheses
 		hungry-delete
 		ibuffer-projectile
 		ivy
 		magit
+		;; UI
 		monokai-theme
+		highlight-parentheses
+		rainbow-delimiters
+		smartparens
+		;; modeline
+		diminish
 		nyan-mode
+		
 		org-bullets
 		org-octopress
 		org-projectile
 		popwin
-		powerline
 		projectile
 		pyim
-		quickrun
-		rainbow-delimiters
+		
+	
 		swiper
-		smartparens
+
 		use-package
-		which-key
 		window-numbering 
 		) "Default packages")
 
