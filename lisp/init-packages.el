@@ -17,6 +17,7 @@
 		anaconda-mode
 		all-the-icons
 		all-the-icons-dired
+		ranger
 		company
 		py-autopep8
 		flycheck

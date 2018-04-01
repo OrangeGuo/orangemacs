@@ -14,14 +14,25 @@
 (global-evil-leader-mode)
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)
-(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 (load-theme 'dracula t)
+(require 'all-the-icons)
+;; or
+(use-package all-the-icons)
+(setq inhibit-compacting-font-caches t)
+(ranger-override-dired-mode t)
+(setq ranger-cleanup-eagerly t)
+(setq ranger-show-hidden nil)
+(setq ranger-preview-file t)
+(setq ranger-max-preview-size 1)
+(setq ranger-dont-show-binary t)
+(setq ranger-width-preview 0.55)
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 (evil-leader/set-leader "<SPC>")
 (require 'highlight-parentheses)
 (global-highlight-parentheses-mode 1)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(add-hook 'python-mode-hook #'global-flycheck-mode)
+(add-hook 'python-mode-hook #'flycheck-mode)
 
 (evil-leader/set-key
   "fs" 'save-buffer

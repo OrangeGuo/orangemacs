@@ -20,7 +20,6 @@
  ;; If there is more than one, they won't work right.
  '(fill-column 84)
  '(org-agenda-files '("~/org"))
- '(org-export-headline-levels 4)
  '(package-selected-packages
    '(smart-yank anaconda-mode company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete swiper counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme)))
 (custom-set-faces
@@ -28,7 +27,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(all-the-icons-dired-dir-face ((t (:foreground "green"))))
+ '(all-the-icons-dired-dir-face ((t (:foreground "purple4"))))
  '(org-level-1 ((t (:inherit default :foreground "red" :height 1.3))))
  '(org-level-2 ((t (:inherit default :foreground "green" :height 1.2))))
  '(org-level-3 ((t (:inherit default :foreground "deep sky blue" :height 1.15))))
