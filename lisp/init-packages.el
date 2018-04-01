@@ -42,6 +42,7 @@
 		quickrun
 		yasnippet
 		yasnippet-snippets
+		auto-yasnippet 
 
 		counsel
 		counsel-projectile

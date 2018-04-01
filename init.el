@@ -11,6 +11,8 @@
 (require 'init-company)
 (require 'init-ivy)
 (require 'init-org)
+(require 'init-web)
+(require 'init-dired)
 ;;(require 'init-python)
 (message (emacs-init-time))
 (custom-set-variables
