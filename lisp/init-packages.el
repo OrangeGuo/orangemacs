@@ -20,6 +20,10 @@
 		ranger
 		
 		company
+		;; c
+		irony
+		company-irony
+		company-irony-c-headers
 		;; python 
 		anaconda-mode
 		py-autopep8

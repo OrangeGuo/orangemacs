@@ -31,6 +31,17 @@
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'python-mode-hook #'flycheck-mode)
 
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+
+(require 'company-irony-c-headers)
+;; Load with `irony-mode` as a grouped backend
+(eval-after-load 'company
+  '(add-to-list
+    'company-backends '(company-irony-c-headers company-irony)))
+(eval-after-load 'company
+  '(add-to-list 'company-backends 'company-irony))
+
 (evil-leader/set-key
   "fs" 'save-buffer
   "ff" 'counsel-find-file
