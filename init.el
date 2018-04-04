@@ -13,6 +13,7 @@
 (require 'init-org)
 (require 'init-web)
 (require 'init-dired)
+(require 'init-c)
 ;;(require 'init-python)
 (message (emacs-init-time))
 (custom-set-variables
