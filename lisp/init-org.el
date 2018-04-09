@@ -1,3 +1,7 @@
+(require 'calfw)
+(require 'calfw-org)
+(setq cfw:org-overwrite-default-keybinding t)
+
 (setq org-default-notes-file "~/org/inbox.org")
 (setq org-capture-templates nil)
 (add-to-list 'org-capture-templates

@@ -14,6 +14,8 @@
 		ace-link
 		ace-window
 		avy
+		calfw
+		calfw-org
 		;; dired 
 		all-the-icons
 		all-the-icons-dired
@@ -60,6 +62,7 @@
 		highlight-parentheses
 		rainbow-delimiters
 		smartparens
+		clean-aindent-mode
 		;; modeline
 		diminish
 		nyan-mode
