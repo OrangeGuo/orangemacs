@@ -33,4 +33,7 @@
 (add-hook 'org-mode-hook 'org-bullets-mode)
 (add-hook 'org-mode-hook 'auto-fill-mode)
 (add-hook 'after-init-hook 'nyan-mode)
+(require 'indent-guide)
+(add-hook 'prog-mode-hook 'indent-guide-mode)
+
 (provide 'init-ui)
