@@ -80,4 +80,5 @@
 (diminish 'eldoc-mode )
 (diminish 'which-key-mode )
 (diminish 'highlight-parentheses-mode)
+(diminish 'indent-guide-mode)
 (provide 'init-config)
