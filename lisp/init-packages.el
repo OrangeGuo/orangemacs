@@ -16,6 +16,7 @@
 		avy
 		calfw
 		calfw-org
+		youdao-dictionary
 		;; dired 
 		all-the-icons
 		all-the-icons-dired
