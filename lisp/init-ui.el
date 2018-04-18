@@ -34,6 +34,11 @@
 (add-hook 'org-mode-hook 'auto-fill-mode)
 (add-hook 'after-init-hook 'nyan-mode)
 (require 'indent-guide)
+<<<<<<< HEAD
 (add-hook 'prog-mode-hook 'indent-guide-mode)
+=======
+(indent-guide-global-mode)
+
+>>>>>>> origin/master
 
 (provide 'init-ui)
