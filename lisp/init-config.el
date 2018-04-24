@@ -41,6 +41,8 @@
   "gi" 'magit-init
   "bi" 'ibuffer
   "bb" 'switch-to-prev-buffer
+  "bl" 'list-bookmarks
+  "bs" 'bookmark-set
   "ms" 'kmacro-start-macro
   "me" 'kmacro-end-call-mouse
   "mc" 'kmacro-call-macro
