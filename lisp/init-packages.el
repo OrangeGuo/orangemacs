@@ -19,8 +19,6 @@
 		youdao-dictionary
 		indent-guide
 		;; dired 
-		all-the-icons
-		all-the-icons-dired
 		ranger
 		
 		company
