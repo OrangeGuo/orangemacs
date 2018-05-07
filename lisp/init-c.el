@@ -9,6 +9,7 @@
 	       (add-hook 'c++-mode-hook
 			 (lambda () (add-to-list 'company-backends '(company-irony-c-headers company-irony)))
 	       ))))
+(setq c-basic-offset 4)
 (provide 'init-c)
 
 

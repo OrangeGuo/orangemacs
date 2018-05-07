@@ -21,7 +21,7 @@
 (global-evil-leader-mode)
 (evil-mode 1)
 (setcdr evil-insert-state-map nil)
-(load-theme 'dracula t)
+(load-theme 'monokai t)
 (sp-local-pair '(emacs-lisp-mode lisp-interaction-mode) "'" nil :actions nil)
 (setq inhibit-compacting-font-caches t)
 (define-key evil-insert-state-map [escape] 'evil-normal-state)

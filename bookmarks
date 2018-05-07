@@ -2,14 +2,19 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("documents"
- (filename . "~/Documents/")
- (front-context-string . "PL0\n  drwxrwxr-x")
- (rear-context-string . "0K Jan 11 13:49 ")
- (position . 501))
+(("os"
+ (filename . "~/task/")
+ (front-context-string . "mycat.c\n  -rw-rw")
+ (rear-context-string . "79 May  6 09:25 ")
+ (position . 92))
 ("emacs"
  (filename . "~/.emacs.d/")
- (front-context-string . "lisp\n  drwxrwxrw")
- (rear-context-string . "0K Apr 24 21:52 ")
- (position . 344))
+ (front-context-string . "elpa\n  drwxrwxr-")
+ (rear-context-string . "0K May  2 09:31 ")
+ (position . 203))
+("project"
+ (filename . "~/IdeaProjects/socket/")
+ (front-context-string . "out\n  drwxrwxr-x")
+ (rear-context-string . "0K May  2 14:27 ")
+ (position . 91))
 )
