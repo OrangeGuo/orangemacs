@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("os"
+(("gtd"
+ (filename . "~/org/gtd.org")
+ (front-context-string . "** TODO [#B] 国际贸")
+ (rear-context-string . "5-08 Tue 21:11>\n")
+ (position . 161))
+("os"
  (filename . "~/task/")
  (front-context-string . "mycat.c\n  -rw-rw")
  (rear-context-string . "79 May  6 09:25 ")

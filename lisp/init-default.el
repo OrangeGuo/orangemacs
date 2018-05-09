@@ -3,8 +3,6 @@
 (setq make-backup-files nil)
 (delete-selection-mode 1)
     ;; Org Headline Bullet Style (From Level 0 to Level 20)
-(setq org-bullets-bullet-list
-    '("①" "②" "③" "④" "⑤" "⑥" "⑦" "⑧" "⑨" "⑩"  ))
 (set-language-environment "UTF-8")
 (fset 'yes-or-no-p 'y-or-n-p)
 (require 'dired-x)
