@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("gtd"
+(("network"
+ (filename . "~/post/source/blog/2018-02-26-computer-network.org")
+ (front-context-string . "* 计算机网络概论\n** 计算机")
+ (rear-context-string . "UBLISHED: true\n\n")
+ (position . 164))
+("notes"
+ (filename . "~/post/source/blog/")
+ (front-context-string . "2018-01-19-java-")
+ (rear-context-string . "7K May  7 21:49 ")
+ (position . 393))
+("gtd"
  (filename . "~/org/gtd.org")
  (front-context-string . "** TODO [#B] 国际贸")
  (rear-context-string . "5-08 Tue 21:11>\n")
@@ -17,9 +27,4 @@
  (front-context-string . "elpa\n  drwxrwxr-")
  (rear-context-string . "0K May  2 09:31 ")
  (position . 203))
-("project"
- (filename . "~/IdeaProjects/socket/")
- (front-context-string . "out\n  drwxrwxr-x")
- (rear-context-string . "0K May  2 14:27 ")
- (position . 91))
 )

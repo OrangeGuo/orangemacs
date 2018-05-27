@@ -10,6 +10,7 @@
 			 (lambda () (add-to-list 'company-backends '(company-irony-c-headers company-irony)))
 	       ))))
 (setq c-basic-offset 4)
+(setq sp-escape-quotes-after-insert nil)
 (provide 'init-c)
 
 
