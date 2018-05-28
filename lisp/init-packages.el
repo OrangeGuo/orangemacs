@@ -26,6 +26,7 @@
 		irony
 		company-irony
 		company-irony-c-headers
+		clang-format
 		;; python 
 		anaconda-mode
 		py-autopep8
