@@ -27,6 +27,7 @@
 		company-irony
 		company-irony-c-headers
 		clang-format
+		evil-nerd-commenter
 		;; python 
 		anaconda-mode
 		py-autopep8
