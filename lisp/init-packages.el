@@ -77,6 +77,7 @@
 		pyim
 		
 	
+		string-inflection
 		swiper
 
 		use-package
