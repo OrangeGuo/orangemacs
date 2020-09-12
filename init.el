@@ -22,9 +22,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(fill-column 84)
- '(org-agenda-files '("~/org"))
+ '(org-agenda-files
+   (quote
+	("/home/orange/org/gtd.org" "/home/orange/org/notes.org")))
  '(package-selected-packages
-   '(smart-yank anaconda-mode company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme)))
+   (quote
+	(helm-smex dired-icon all-the-icons-dired frameshot smart-yank anaconda-mode company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -35,3 +38,5 @@
  '(org-level-3 ((t (:inherit default :foreground "deep sky blue" :height 1.15))))
  '(org-level-4 ((t (:inherit default :foreground "magenta" :height 1.1))))
  '(org-level-5 ((t (:inherit default :foreground "sandy brown")))))
+
+;;(org-agenda-list)

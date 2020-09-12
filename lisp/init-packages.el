@@ -1,8 +1,13 @@
   (when (>= emacs-major-version 24)
      (require 'package)
-     ;;(package-initialize)
-     (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-		      ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
+     (package-initialize)
+     (setq package-archives '(
+		("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
+        ("org-cn"   . "http://elpa.emacs-china.org/org/")
+        ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")
+	;;		  ("gnu"   . "http://elpa.emacs-china.org/gnu/")
+	;;	      ("melpa" . "http://elpa.emacs-china.org/melpa/")
+			  )))
 
 ;; 注意 elpa.emacs-china.org 是 Emacs China 中文社区在国内搭建的一个 ELPA 镜像
 
@@ -20,7 +25,7 @@
 		indent-guide
 		;; dired 
 		ranger
-		
+		helm-smex
 		company
 		;; c
 		irony
@@ -29,15 +34,15 @@
 		clang-format
 		evil-nerd-commenter
 		;; python 
-		anaconda-mode
-		py-autopep8
-		company-anaconda
+		;;anaconda-mode
+		;;py-autopep8
+		;;company-anaconda
 		
 		;; web
-		web-mode
-		js2-mode
-		web-beautify
-		js2-refactor
+;;		web-mode
+;;		js2-mode
+;;		web-beautify
+;;		js2-refactor
 		emmet-mode
 
 		;; key 
@@ -145,7 +150,7 @@
   :config
   (progn
     (setq org-projectile-projects-file
-          "/your/path/to/an/org/file/for/storing/projects.org")
+          "~/.emacs.d/project.org")
     (setq org-agenda-files (append org-agenda-files (org-projectile-todo-files)))
     (push (org-projectile-project-todo-entry) org-capture-templates))
   :ensure t)

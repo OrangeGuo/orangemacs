@@ -19,4 +19,8 @@
 (setq org-export-with-toc nil)
 ;;(setq org-export-with-section-numbers nil)
 (setq auto-save-default nil)
+
+(require 'helm-smex)
+(global-set-key [remap execute-extended-command] #'helm-smex)
+(global-set-key (kbd "M-X") #'helm-smex-major-mode-commands)    
 (provide 'init-default)

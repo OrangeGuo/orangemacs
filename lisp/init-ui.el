@@ -6,7 +6,7 @@
 (scroll-bar-mode -1)
 
 ;; 显示行号
-(global-linum-mode -1)
+(global-linum-mode 1)
 
 ;; 更改光标的样式（不能生效，解决方案见第二集）
 (setq-default cursor-type 'bar)
@@ -15,12 +15,6 @@
 (global-hl-line-mode 1)
 (which-key-mode 1)
 ;; adjust my English and Chinese font for table align
-;;(set-face-attribute
-;; 'default nil
-;; :font (font-spec :name "-adbe-source code pro-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1"
-;;                  :weight 'normal
-;;                  :slant 'normal
-;;                  :size 18)) 
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font
    (frame-parameter nil 'font)
