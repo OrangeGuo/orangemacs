@@ -1,0 +1,15 @@
+* OrangEmacs
+a pure and quick configuration for emacs
+** install
+1. git clone this repository
+2. start emacs 
+  
+** dependency
+- emacs
+- git for magit 
+- mlocate for counsel-locate
+- silversearcher-ag for helm-ag
+
+** FAQ
+*** irony server installation failure and format
+sudo apt install libclang-dev clang-format
