@@ -9,6 +9,8 @@ a pure and quick configuration for emacs
 - git for magit 
 - mlocate for counsel-locate
 - silversearcher-ag for helm-ag
+- font source pro 
+
 
 ** FAQ
 *** irony server installation failure and format
