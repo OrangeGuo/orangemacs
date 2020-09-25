@@ -1,4 +1,4 @@
-(package-initialize)
+;;(package-initialize)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 ;; Package Management
@@ -23,12 +23,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(fill-column 84)
- '(org-agenda-files
-   (quote
-	("/home/orange/org/gtd.org" "/home/orange/org/notes.org")))
+ '(org-agenda-files '("/home/orange/org/gtd.org" "/home/orange/org/notes.org"))
  '(package-selected-packages
-   (quote
-	(org-plus-contrib helm-smex dired-icon all-the-icons-dired frameshot smart-yank anaconda-mode company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme))))
+   '(pdf-tools org-plus-contrib helm-smex dired-icon all-the-icons-dired frameshot smart-yank anaconda-mode company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme))
+ '(pyim-dicts
+   '((:name "60w" :file "/home/orange/.emacs.d/dist/pyim-bigdict.pyim.gz"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
