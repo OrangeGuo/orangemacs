@@ -9,7 +9,7 @@ a pure and quick configuration for emacs
 - git for magit 
 - mlocate for counsel-locate
 - silversearcher-ag for helm-ag
-- font source code pro 
+- font:source code pro,nsimsun 
 
 
 ** FAQ
