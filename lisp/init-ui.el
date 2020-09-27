@@ -5,8 +5,8 @@
 ;; 关闭文件滑动控件
 (scroll-bar-mode -1)
 
-;; 显示行号
-(global-linum-mode 1)
+;; 显示行号;需要编辑大org 文件必须关闭行号显示
+(global-linum-mode -1)
 
 ;; 更改光标的样式（不能生效，解决方案见第二集）
 (setq-default cursor-type 'bar)
