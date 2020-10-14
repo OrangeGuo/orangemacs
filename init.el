@@ -23,7 +23,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(fill-column 84)
- '(org-agenda-files '("/home/orange/org/gtd.org" "/home/orange/org/notes.org"))
+ '(org-agenda-files '("~/org/gtd.org" "~/org/notes.org"))
  '(package-selected-packages
    '(pdf-tools org-plus-contrib helm-smex dired-icon all-the-icons-dired frameshot smart-yank anaconda-mode company projectile counsel-projectile org-projectile use-package evil-leader evil helm-ag magit hungry-delete counsel smartparens popwin which-key ivy pyim ace-window ace-link nyan-mode diminish org-octopress org-bullets window-numbering ibuffer-projectile monokai-theme)))
 (custom-set-faces
